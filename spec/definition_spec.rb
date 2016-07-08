@@ -7,17 +7,18 @@ describe('Definition') do
   before() do
     Definition.clear()
   end
-  describe('#part_of_speech') do
-    it 'returns the part of speech of the definition' do
-      test_definition = Definition.new({:definition=> 'go around from one place to another in the pursuit of pleasure or entertainment', :part_of_speech=> 'verb'})
-      expect(test_definition.part_of_speech()).to(eq('verb'))
-    end
-  end
 
   describe('#definition') do
     it 'returns definition property of definition object' do
       test_definition = Definition.new({:definition=> 'go around from one place to another in the pursuit of pleasure or entertainment', :part_of_speech=> 'verb'})
       expect(test_definition.definition()).to(eq('go around from one place to another in the pursuit of pleasure or entertainment'))
+    end
+  end
+
+  describe('#part_of_speech') do
+    it 'returns the part of speech of the definition' do
+      test_definition = Definition.new({:definition=> 'go around from one place to another in the pursuit of pleasure or entertainment', :part_of_speech=> 'verb'})
+      expect(test_definition.part_of_speech()).to(eq('verb'))
     end
   end
 
@@ -46,7 +47,7 @@ describe('Definition') do
     it 'returns a definition by its id number' do
       test_definition = Definition.new({:definition=> 'go around from one place to another in the pursuit of pleasure or entertainment', :part_of_speech=> 'verb'})
       test_definition.save()
-      test_definition2 = Definition.new(:definition=> 'old-fashioned or less technical term for edema', :part_of_speech=> 'noun')
+      test_definition2 = Definition.new(:definition=> 'to go about with members of the opposite sex', :part_of_speech=> 'verb')
       test_definition2.save()
       expect(Definition.find(test_definition.id())).to(eq(test_definition))
     end
