@@ -22,4 +22,11 @@ describe('Word') do
       expect(Word.all()).to(eq([]))
     end
   end
+
+  describe('#save') do
+    it 'pushes the current word into the words array' do
+      test_word = Word.new('gallivant')
+      expect(test_word.save()).to(eq([test_word]))
+    end
+  end
 end
