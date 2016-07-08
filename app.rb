@@ -26,7 +26,7 @@ end
 
 get('/definitions/:id') do
   @definition = Definition.find(params.fetch('id').to_i())
-  erb(:definition)
+  erb(:definitions)
 end
 
 get('/words/:id') do

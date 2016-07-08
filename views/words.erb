@@ -1,6 +1,6 @@
-<h1>Dealerships</h1>
+<h1>Words</h1>
 <ul>
-  <% @dealerships.each() do |dealership| %>
-    <li><a href="/dealerships/<%= dealership.id() %>"><%= dealership.name() %></a></li>
+  <% @words.each() do |word| %>
+    <li><a href="/words/<%= word.id() %>"><%= word.name() %></a></li>
   <% end %>
 </ul>
