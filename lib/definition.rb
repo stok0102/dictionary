@@ -4,8 +4,8 @@ class Definition
   attr_reader(:definition, :part_of_speech, :id)
 
   define_method(:initialize) do |info|
+    @definition = info.fetch(:definition)
     @part_of_speech = info.fetch(:part_of_speech)
-    @definition = []
     @id = @@definitions.length().+(1)
   end
 
