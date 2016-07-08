@@ -40,7 +40,7 @@ get('/words/:id/definitions/new') do
 end
 
 post('/definitions') do
-  definition = params.fetch('definition')
+  definition = params.fetch('meaning')
   part_of_speech = params.fetch('part_of_speech')
   @definition = Definition.new({:definition=> definition, :part_of_speech=> part_of_speech})
   @definition.save()

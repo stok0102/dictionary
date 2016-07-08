@@ -2,7 +2,7 @@
 
 <h3>Here are the definitions of this word: </h3>
 <ul>
-  <% @definitions.each() do |definition| %>
+  <% @definition.each() do |definition| %>
     <li><a href="/definitions/<%= definition.id() %>"><%= definition.model() %></a></li>
   <% end %>
 </ul>
