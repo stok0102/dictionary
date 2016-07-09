@@ -1,9 +1,9 @@
 # Word Count
-This ruby app will return how frequently a word appears in a given string. 
+This ruby app will allow users to build a dictionary of words and associated definitions, adding multiple definitions per word. 
 
 ## Installation
 
-Clone this repository from https://github.com/stok0102/word_count
+Clone this repository from https://github.com/stok0102/dictionary
 
 ## Usage
 
