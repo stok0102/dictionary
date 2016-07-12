@@ -24,6 +24,5 @@ describe('the add word path', {:type => :feature}) do
     click_link('See Words')
     click_link('dropsy')
     expect(page).to have_content('archaic term for edema')
-
   end
 end

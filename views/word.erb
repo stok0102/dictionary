@@ -2,7 +2,7 @@
 
 <ul>
   <% @word.definition().each() do |definition| %>
-    <li><a href="/definitions/<%= definition.id() %>"><%= definition.definition() %> <%= definition.part_of_speech() %></a></li>
+    <li><%= definition.definition() %> <%= definition.part_of_speech() %></li>
   <% end %>
 </ul>
 

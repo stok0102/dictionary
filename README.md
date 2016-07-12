@@ -1,5 +1,5 @@
 # Word Count
-This ruby app will allow users to build a dictionary of words and associated definitions, adding multiple definitions per word. 
+This ruby app will allow users to build a dictionary of words and associated definitions, adding multiple definitions per word.
 
 ## Installation
 
@@ -7,7 +7,7 @@ Clone this repository from https://github.com/stok0102/dictionary
 
 ## Usage
 
-You can see the site live at: https://polar-refuge-71372.herokuapp.com/
+You can see the site live at: https://radiant-badlands-26365.herokuapp.com/
 ## Contributing
 
 1. Fork
